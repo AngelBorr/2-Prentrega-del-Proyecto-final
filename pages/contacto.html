@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../style/bootstrap.min.css">
+    <link rel="stylesheet" href="./../Style/style.css">
+    <link
+      rel="shortcut icon"
+      href="./../assets/Images/logo-pagina.png"
+      type="image/x-icon"
+    />
+    <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+  <h1 id="header__titulo">Estudio de Desarrollo Web</h1>
+  </header>
+
+  <nav class="nav container" id="nav">
+    <input type="checkbox" id="btn__menu__checkbox" />
+    <label for="btn__menu__checkbox">
+      <img
+        class="img__btn__menu"
+        src="./../assets/images/imagen-boton-menu-2.png"
+        alt=""
+        width="35px"
+      />
+    </label>
+
+    <div class="nav__menu">
+      <!-- ul es lista no ordenada-->
+      <ul class="nav__menu__ul">
+        <li class="nav__menu__ul__li">
+          <a href="./../index.html">Inicio</a>
+        </li>
+        <li class="nav__menu__ul__li">
+          <a href="./nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav__menu__ul__li">
+          <a href="./servicios.html">Servicios</a>
+        </li>
+        <li class="nav__menu__ul__li">
+          <a href="./clientes.html">Quienes confian en Nosotros</a>
+        </li>
+        <li class="nav__menu__ul__li" id="selected">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+  <h2 class="body__subtitulo">Contacto</h2>
+  </div>
+
+  <div class="main__container__contacto">
+    <main class="main__parrafos__paginas">
+      <form class="form__formulario" action="/formulario" method="post">
+        <div class="mb-3">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="apellido">Apellido</label>
+          <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Apellido"> 
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="Correo">Correo</label>
+          <input class="form-control" type="email" id="correo" name="correo" placeholder="E-mail">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="Comentarios" id="comentarios" cols="30" rows="10" placeholder="ingrese comentarios"></textarea>        
+          <input class="btn btn-primary" type="submit"></input>
+        </div>
+      </form>
+    </main>
+
+      <aside class="aside__img__paginas">
+      <img class="aside__img__contacto img-fluid" src="./../assets/Images/Imagen-contacto" alt="img-contacto" width="100%">
+      </aside>
+    
+  </div>
+
+
+  <footer class="footer__contacto">
+    <section>
+      <a href="#header__titulo">Ir al comienzo</a>
+      <a href="./contacto.html">Contacto</a>      
+    </section>
+
+    <p>Copyright 2022</p>
+  </footer>
+</body>
+</html>
