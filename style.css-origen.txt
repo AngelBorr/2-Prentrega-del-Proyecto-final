@@ -1,0 +1,638 @@
+/**** HTML ****/
+* {
+  height: auto;
+}
+
+html {
+  font-family: Georgia, "Times New Roman", Times, serif,;
+}
+
+/**** IMAGEN PORTADA ****/
+
+.main__index {
+  width: 100%;
+  height: 100vh;
+}
+
+.index__img__portada {
+  width: 100%;
+  height: 100%;
+}
+
+/**** HEADER ****/
+
+header {
+  background-color: #00abad;
+  border: solid #0af3cc;
+  color: orange;
+  }
+
+#header__titulo {
+  font-size: 55px;
+  text-align: center;
+}
+
+/**** BODY ****/
+
+body {
+  margin: 0;
+  background-color: #c76aff;
+  padding-bottom: 0;
+  min-height: 100vh;
+}
+
+.body__subtitulo {
+  margin: 0;
+  background-color: #3e9a4c;
+  color: rgb(243, 210, 23);
+  font-size: 50px;
+  text-align: center;
+}
+
+.subtitulo__clientes{
+  margin: 0;
+}
+
+body main .main__parrafos__paginas {
+  font-size: 25px;
+  
+}
+
+/**** MAIN ****/
+
+.main__container {
+  display: grid;
+}
+
+.main__container {
+  padding: 15px;
+  align-content: center;
+}
+
+main {
+  margin: 15px;
+  padding: 20px;
+  background: #ffeccc;
+}
+
+.main__container__nosotros {
+  display: grid;
+  
+}
+
+.main__parrafo__nosotros {
+  width: 100%;
+  display: flex;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.main__parrafo__servicios {
+  font-size: 18px;
+}
+
+/**** FORMULARIO ****/
+
+.form__formulario {
+  justify-content: center;
+}
+
+/**** ASIDE ****/
+
+aside {
+  margin: 15px;
+  padding: 20px;
+  display: flex;
+}
+
+aside .aside__img__paginas {
+  width: 100%;
+  height: 100%;
+}
+
+.aside__img__contacto {
+  width: 750px;
+  height: 600px;
+}
+
+/**** MENU ****/
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn__nav__menu {
+  transform: var(--state-btn__menu);
+}
+
+.nav {
+  --state-btn__menu: scale(0);
+  --state-menu: translate(0);
+}
+
+.nav {
+  background-color: #a27d52;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  display: flex;
+  
+}
+
+.nav__menu {
+  width: 100%;
+  justify-content: space-around;
+}
+
+#selected {
+  transform: scale(1.1);
+  background-color: rgb(63, 60, 60);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav__menu__ul {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  transform: var(--state-menu);
+}
+
+.nav__menu__ul__li {
+  background-color: #a27d52;
+  list-style-type: none;
+  flex-grow: 1;
+  font-family: cursive;
+  border-right: 1px solid #0af3cc;
+}
+
+.nav__menu a {
+  color: #c3fcf1;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+}
+
+.nav__menu a:hover {
+  color: rgb(63, 60, 60);
+  background: rgb(63, 60, 60, 0.3);
+  height: 45px;
+}
+
+/**** FOOTER ****/
+
+footer {
+  background: rgb(54, 54, 54);
+  padding: 20px;
+  height: max-content;
+  color: white;
+}
+
+footer section {
+  float: right;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+/**** LISTA CLIENTES ****/
+
+.lista__clientes__container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.lista__clientes__container li {
+  list-style: none;
+  padding: 10px;
+}
+
+/**** ESTRUCTURA MOVIL ****/
+
+.img__btn__menu {
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+
+#label__check {
+  width: 50px;
+  height: 100%;
+  display: none;
+}
+
+#btn__menu__checkbox {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  #header__titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  .img__btn__menu {
+    display: flex;
+  }
+
+  .nav label:hover {
+    cursor: pointer;
+    width: max-content;
+  }
+
+  #btn__menu__checkbox {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #btn__menu__checkbox:checked ~ .nav__menu > .nav__menu__ul {
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #selected {
+    padding-left: 28px;
+    width: 320px;
+    text-align: left;
+  }
+
+  .nav {
+    --state-btn__menu: scale(1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .nav:target {
+    --state-btn__menu: scale(1);
+    --state-menu: translate(0);
+  }
+
+  .nav__menu {
+    display: flex;
+  }
+
+  .nav__menu__ul {
+    flex-direction: column;
+    background-color: rgb(151, 144, 144);
+    position: fixed;
+    left: 0;
+    top: 150px;
+    width: 360px;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    align-items: flex-start;
+    padding-left: 10px;
+    opacity: 0;
+    visibility: hidden;
+
+    transform: var(--state-menu);
+    transition: 0.3s transform;
+  }
+
+  .nav__menu__ul__li > a:hover {
+    transform: scale(1);
+  }
+
+  .nav__menu__ul__li {
+    border-right: none;
+    padding-left: 15px;
+    width: 340px;
+    text-align: left;
+  }
+
+  .nav__menu__ul__li a {
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+
+/*** PAGES NOSOTROS / SERVICIOS ***/
+
+@media screen and (max-width: 580px){
+  
+  .main__container__nosotros {
+    display: grid;
+    
+  }
+}
+
+@media screen and (min-width: 581px){
+  #header__titulo{
+    font-size: 3em;
+  }
+
+  .nav__menu__ul__li a{
+    font-size: 1.2em;
+  }
+
+  .main__container__nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    height: max-content;
+  }
+
+  .main__parrafo__nosotros{
+    font-size: 1.2em;
+  }
+
+  .main__parrafos__paginas{
+    margin: 15px;
+    height: max-content;
+  }
+
+}
+
+@media screen and (min-width: 769px){
+  .main__container__nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    margin: 0;
+  }
+
+  .main__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    margin: 0;
+  }
+
+  .main__parrafo__nosotros{
+    padding-top: 0;
+  }
+  
+  .main__parrafo__servicios p{
+    font-size: 0.8em;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 993px){
+  .main__parrafo__servicios p{
+    font-size: 0.9em;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1201px){
+  .main__parrafo__servicios p{
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  .main__parrafos__paginas{
+    display: flex;
+  }
+
+  .main__parrafo__nosotros{
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+  }
+  
+  .main__parrafo__servicios p{
+    font-size: 1em;
+    text-align: justify;
+  }
+}
+
+/*** CLIENTES ***/
+
+@media screen and (max-width: 580px){
+  .subtitulo__clientes{
+    font-size: 0.6em;
+  }
+
+  .lista__clientes__container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    padding: 0;
+  }
+
+  .lista__clientes__container > ul{
+    padding: 0;
+  }
+
+  .lista__clientes__container li {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 581px){
+  .subtitulo__clientes{
+    font-size: 0.9em;
+  }
+
+  .lista__clientes__container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    padding: 0;
+  }
+
+  .lista__clientes__container > ul{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .lista__clientes__container{
+    width: 100%;
+    display: grid;    
+    padding: 0;
+  }
+
+  .lista__clientes__container > ul{
+    display: grid;
+    grid-template-areas:
+    "bayer siemens"
+    "cromoion richmond"
+    "fisher fisher";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .bayer{
+    grid-area: bayer;    
+  }
+
+  .siemens{
+    grid-area: siemens;
+  }
+
+  .cromoion{
+    grid-area: cromoion;
+  }
+
+  .richmond{
+    grid-area: richmond;
+  }
+
+  .fisher{
+    grid-area: fisher;
+  }
+
+  .lista__clientes__container > ul > li{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+  }
+
+  .lista__clientes__container > ul > li > img{
+    width: 80%;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 993px){
+  .lista__clientes__container > ul{
+    display: grid;
+    grid-template-areas:
+    "bayer siemens cromoion"
+    " richmond fisher";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/*** CONTACTO ***/
+
+@media screen and (max-width: 580px){
+  .main__container__contacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 45%;
+    margin: 0;
+  }
+
+  .form__formulario{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-label{
+    font-size: 1em;
+  }
+
+  .aside__img__contacto{
+    width: 550px;
+    height: 426px;
+  }
+
+  .container{
+    max-width: 100%;
+  }
+
+  .footer__contacto{
+    height: max-content;
+  }  
+}
+
+@media screen and (min-width: 581px){
+  .container{
+    max-width: 100%;
+  }
+
+  .form-label{
+    font-size: 1.3em;
+  }
+
+}
+
+@media screen and (min-width: 769px){
+  #header__titulo{
+    margin: 32px;
+    font-family: cursive;
+    font-size: 3.2em;
+  }
+
+  .nav__menu__ul__li a{
+    font-size: 1.5em;
+  }
+
+  .main__container__contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    margin: 0;
+  }
+
+  .form-label{
+    font-size: 1em;
+  }
+
+  .main__parrafos__paginas{
+    margin: 15px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 993px){
+  #header__titulo{
+    margin: 28px;
+    font-family: cursive;
+    font-size: 3.6em;
+  }
+
+  .nav__menu__ul__li a{
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (min-width: 1201px){
+  .form-label{
+    font-size: 1.2em;
+  }
+
+  .main__parrafos__paginas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__menu__ul__li a{
+    font-size: 1.8em;
+  }
+
+  #header__titulo{
+    margin: 26px;
+    font-family: cursive;
+    font-size: 3.8em;
+  }
+
+  .form-control{
+    width: 450px;
+  }
+}
