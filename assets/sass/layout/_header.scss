@@ -1,0 +1,12 @@
+@import "utilities/variables";
+
+header {
+    background-color: $header_background-color;
+    border: $header_border-color;
+    color: orange;
+    }
+  
+  #header__titulo {
+    font-size: 55px;
+    text-align: center;
+  }
