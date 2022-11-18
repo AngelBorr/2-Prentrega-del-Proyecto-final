@@ -1,4 +1,82 @@
-@import url(./layout/_header.scss);
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: auto;
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+header {
+  background-color: #00abad;
+  border: solid #0af3cc;
+  color: orange; }
+
+#header__titulo {
+  font-size: 55px;
+  text-align: center; }
+
+/**** IMAGEN PORTADA ****/
+.main__index {
+  width: 100%;
+  height: 100vh; }
+
+.index__img__portada {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  background-color: #c76aff;
+  padding-bottom: 0;
+  min-height: 100vh; }
+
+.body__subtitulo {
+  margin: 0;
+  background-color: #3e9a4c;
+  color: #f3d217;
+  font-size: 50px;
+  text-align: center; }
+
+.subtitulo__clientes {
+  margin: 0; }
+
+body main .main__parrafos__paginas {
+  font-size: 25px; }
+
+.main__container {
+  display: grid; }
+
+.main__container {
+  padding: 15px;
+  align-content: center; }
+
+main {
+  margin: 15px;
+  padding: 20px;
+  background: #ffeccc; }
+
+.main__container__nosotros {
+  display: grid; }
+
+.main__parrafo__nosotros {
+  width: 100%;
+  display: flex;
+  text-align: justify;
+  padding-top: 20px; }
+
+.main__parrafo__servicios {
+  font-size: 18px; }
+
+.form__formulario {
+  justify-content: center; }
+
+aside {
+  margin: 15px;
+  padding: 20px;
+  display: flex; }
+
+aside .aside__img__paginas {
+  width: 100%;
+  height: 100%; }
+
+.aside__img__contacto {
+  width: 750px;
+  height: 600px; }

@@ -1,7 +1,27 @@
-@import "utilities/variables";
-@import url(./layout/_header.scss);
+@import './utilities/reset';
 
-*{
-    margin: 0;
-    padding: 0;
-}
+@import './utilities/variables';
+
+@import './layout/header';
+
+@import './pages/index';
+
+@import './layout/body';
+
+@import './layout/main';
+
+@import './pages/contacto';
+
+@import './layout/aside';
+
+@import './layout/nav_bar';
+
+@import './layout/footer';
+
+@import './pages/clientes';
+
+@import './pages/nosotros-servicios';
+
+
+
+

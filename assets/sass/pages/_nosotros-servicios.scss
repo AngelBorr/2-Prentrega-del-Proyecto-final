@@ -1,0 +1,89 @@
+@media screen and (max-width: 580px){
+  
+    .main__container__nosotros {
+      display: grid;
+      
+    }
+  }
+  
+  @media screen and (min-width: 581px){
+    #header__titulo{
+      font-size: 3em;
+    }
+  
+    .nav__menu__ul__li a{
+      font-size: 1.2em;
+    }
+  
+    .main__container__nosotros {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 40% 60%;
+      height: max-content;
+    }
+  
+    .main__parrafo__nosotros{
+      font-size: 1.2em;
+    }
+  
+    .main__parrafos__paginas{
+      margin: 15px;
+      height: max-content;
+    }
+  
+  }
+  
+  @media screen and (min-width: 769px){
+    .main__container__nosotros{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 100%;
+      margin: 0;
+    }
+  
+    .main__container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 100%;
+      margin: 0;
+    }
+  
+    .main__parrafo__nosotros{
+      padding-top: 0;
+    }
+    
+    .main__parrafo__servicios p{
+      font-size: 0.8em;
+      text-align: justify;
+    }
+  }
+  
+  @media screen and (min-width: 993px){
+    .main__parrafo__servicios p{
+      font-size: 0.9em;
+      text-align: justify;
+    }
+  }
+  
+  @media screen and (min-width: 1201px){
+    .main__parrafo__servicios p{
+      font-size: 1em;
+      text-align: justify;
+    }
+  
+    .main__parrafos__paginas{
+      display: flex;
+    }
+  
+    .main__parrafo__nosotros{
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3em;
+    }
+    
+    .main__parrafo__servicios p{
+      font-size: 1em;
+      text-align: justify;
+    }
+  }
