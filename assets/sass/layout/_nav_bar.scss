@@ -1,71 +1,70 @@
 .container {
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .btn__nav__menu {
-    transform: var(--state-btn__menu);
-  }
-  
-  .nav {
-    --state-btn__menu: scale(0);
-    --state-menu: translate(0);
-  }
-  
-  .nav {
-    background-color: #a27d52;
-    width: 100%;
-    height: 45px;
-    margin: 0;
-    display: flex;
-    
-  }
-  
-  .nav__menu {
-    width: 100%;
-    justify-content: space-around;
-  }
-  
-  #selected {
-    transform: scale(1.1);
-    background-color: rgb(63, 60, 60);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  }
-  
-  .nav__menu__ul {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    transform: var(--state-menu);
-  }
-  
-  .nav__menu__ul__li {
-    background-color: #a27d52;
-    list-style-type: none;
-    flex-grow: 1;
-    font-family: cursive;
-    border-right: 1px solid #0af3cc;
-  }
-  
-  .nav__menu a {
-    color: #c3fcf1;
-    text-decoration: none;
-    display: block;
-    font-size: 25px;
-  }
-  
-  .nav__menu a:hover {
-    color: rgb(63, 60, 60);
-    background: rgb(63, 60, 60, 0.3);
-    height: 45px;
-  }
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-  /**** ESTRUCTURA MOVIL ****/
+.btn__nav__menu {
+  transform: var(--state-btn__menu);
+}
+
+.nav {
+  --state-btn__menu: scale(0);
+  --state-menu: translate(0);
+}
+
+.nav {
+  background-color: #a27d52;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  display: flex;
+}
+
+.nav__menu {
+  width: 100%;
+  justify-content: space-around;
+}
+
+#selected {
+  transform: scale(1.1);
+  background-color: rgb(63, 60, 60);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav__menu__ul {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  transform: var(--state-menu);
+}
+
+.nav__menu__ul__li {
+  background-color: #a27d52;
+  list-style-type: none;
+  flex-grow: 1;
+  font-family: cursive;
+  border-right: 1px solid #0af3cc;
+}
+
+.nav__menu a {
+  color: #c3fcf1;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+}
+
+.nav__menu a:hover {
+  color: rgb(63, 60, 60);
+  background: rgba(63, 60, 60, 0.3);
+  height: 45px;
+}
+
+/**** ESTRUCTURA MOVIL ****/
 
 .img__btn__menu {
   font-size: 30px;
@@ -141,10 +140,10 @@
 
   .nav__menu__ul {
     flex-direction: column;
-    background-color: rgb(151, 144, 144);
+    /*background-color: rgb(151, 144, 144);*/
     position: fixed;
     left: 0;
-    top: 150px;
+    top: 124px;
     width: 360px;
     height: 0px;
     transition: all 300ms ease;

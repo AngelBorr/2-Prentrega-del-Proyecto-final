@@ -1,23 +1,22 @@
 body {
-    margin: 0;
-    background-color: #c76aff;
-    padding-bottom: 0;
-    min-height: 100vh;
-  }
-  
-  .body__subtitulo {
-    margin: 0;
-    background-color: #3e9a4c;
-    color: rgb(243, 210, 23);
-    font-size: 50px;
-    text-align: center;
-  }
+  margin: 0;
+  background-color: #c76aff;
+  padding-bottom: 0;
+  min-height: 100vh;
+}
 
-  .subtitulo__clientes{
-    margin: 0;
-  }
+.body__subtitulo {
+  margin: 0;
+  background-color: #3e9a4c;
+  color: rgb(243, 210, 23);
+  font-size: 50px;
+  text-align: center;
+}
 
-  body main .main__parrafos__paginas {
-    font-size: 25px;
-    
-  }
+.subtitulo__clientes {
+  margin: 0;
+}
+
+body main .main__parrafos__paginas {
+  font-size: 25px;
+}

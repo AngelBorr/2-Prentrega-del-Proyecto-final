@@ -1,107 +1,107 @@
 .lista__clientes__container {
-    width: 400px;
-    margin: 0 auto;
-  }
-  
-  .lista__clientes__container li {
-    list-style: none;
-    padding: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.lista__clientes__container li {
+  list-style: none;
+  padding: 10px;
+}
+
+@media screen and (max-width: 580px) {
+  .subtitulo__clientes {
+    font-size: 0.75em;
   }
 
-  @media screen and (max-width: 580px){
-    .subtitulo__clientes{
-      font-size: 0.6em;
-    }
-  
-    .lista__clientes__container{
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: max-content;
-      padding: 0;
-    }
-  
-    .lista__clientes__container > ul{
-      padding: 0;
-    }
-  
-    .lista__clientes__container li {
-      padding: 10px;
-    }
+  .lista__clientes__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    padding: 0;
   }
-  
-  @media screen and (min-width: 581px){
-    .subtitulo__clientes{
-      font-size: 0.9em;
-    }
-  
-    .lista__clientes__container{
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: max-content;
-      padding: 0;
-    }
-  
-    .lista__clientes__container > ul{
-      padding: 0;
-    }
+
+  .lista__clientes__container > ul {
+    padding: 0;
   }
-  
-  @media screen and (min-width: 769px){
-    .lista__clientes__container{
-      width: 100%;
-      display: grid;    
-      padding: 0;
-    }
-  
-    .lista__clientes__container > ul{
-      display: grid;
-      grid-template-areas:
+
+  .lista__clientes__container li {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 581px) {
+  .subtitulo__clientes {
+    font-size: 0.9em;
+  }
+
+  .lista__clientes__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    padding: 0;
+  }
+
+  .lista__clientes__container > ul {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .lista__clientes__container {
+    width: 100%;
+    display: grid;
+    padding: 0;
+  }
+
+  .lista__clientes__container > ul {
+    display: grid;
+    grid-template-areas:
       "bayer siemens"
       "cromoion richmond"
       "fisher fisher";
-      grid-template-columns: 50% 50%;
-      grid-template-rows: repeat(3, 1fr);
-    }
-  
-    .bayer{
-      grid-area: bayer;    
-    }
-  
-    .siemens{
-      grid-area: siemens;
-    }
-  
-    .cromoion{
-      grid-area: cromoion;
-    }
-  
-    .richmond{
-      grid-area: richmond;
-    }
-  
-    .fisher{
-      grid-area: fisher;
-    }
-  
-    .lista__clientes__container > ul > li{
-      display: flex;
-      padding: 15px;
-      justify-content: space-around;
-    }
-  
-    .lista__clientes__container > ul > li > img{
-      width: 80%;
-      display: inline-block;
-    }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
   }
-  
-  @media screen and (min-width: 993px){
-    .lista__clientes__container > ul{
-      display: grid;
-      grid-template-areas:
+
+  .bayer {
+    grid-area: bayer;
+  }
+
+  .siemens {
+    grid-area: siemens;
+  }
+
+  .cromoion {
+    grid-area: cromoion;
+  }
+
+  .richmond {
+    grid-area: richmond;
+  }
+
+  .fisher {
+    grid-area: fisher;
+  }
+
+  .lista__clientes__container > ul > li {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+  }
+
+  .lista__clientes__container > ul > li > img {
+    width: 80%;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .lista__clientes__container > ul {
+    display: grid;
+    grid-template-areas:
       "bayer siemens cromoion"
       " richmond fisher";
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
+}
