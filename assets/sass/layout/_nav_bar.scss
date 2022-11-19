@@ -1,3 +1,5 @@
+@import "./../utilities/mixins.scss";
+
 .container {
   margin: 0 auto;
   overflow: hidden;
@@ -13,9 +15,8 @@
 }
 
 .nav {
+  @include sizes (100%, 45px);
   background-color: #a27d52;
-  width: 100%;
-  height: 45px;
   margin: 0;
   display: flex;
 }
@@ -32,8 +33,7 @@
 }
 
 .nav__menu__ul {
-  width: 100%;
-  height: 100%;
+  @include sizes (100%, 100%);
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -67,17 +67,15 @@
 /**** ESTRUCTURA MOVIL ****/
 
 .img__btn__menu {
+  @include sizes (50px, 100%);
   font-size: 30px;
   cursor: pointer;
-  width: 50px;
-  height: 100%;
   display: none;
   align-items: center;
 }
 
 #label__check {
-  width: 50px;
-  height: 100%;
+  @include sizes (50px, 100%);
   display: none;
 }
 
@@ -139,13 +137,12 @@
   }
 
   .nav__menu__ul {
+    @include sizes (360px, 0px);
     flex-direction: column;
     /*background-color: rgb(151, 144, 144);*/
     position: fixed;
     left: 0;
     top: 124px;
-    width: 360px;
-    height: 0px;
     transition: all 300ms ease;
     z-index: 100;
     align-items: flex-start;

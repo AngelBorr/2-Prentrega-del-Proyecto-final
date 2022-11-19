@@ -7,11 +7,11 @@ aside {
 }
 
 aside .aside__img__paginas {
-  @include sizes (100%, none, 100%);
+  @include sizes (100%, 100%);
   
 }
 
 .aside__img__contacto {
-  width: 750px;
-  height: auto;
+  @include sizes (750px, auto);
+  
 }

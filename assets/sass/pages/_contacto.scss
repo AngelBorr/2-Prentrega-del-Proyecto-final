@@ -1,12 +1,12 @@
+@import "./../utilities/mixins.scss";
+
 .form__formulario {
   justify-content: center;
 }
 
 @media screen and (max-width: 580px) {
   .main__container__contacto {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 55% 45%;
+    @include grid(grid, 100%, 55% 45%);
     margin: 0;
   }
 
@@ -22,8 +22,7 @@
   }
 
   .aside__img__contacto {
-    width: 550px;
-    height: 426px;
+    @include sizes(550px, 426px);
   }
 
   .container {
@@ -57,9 +56,7 @@
   }
 
   .main__container__contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100%;
+    @include grid(grid, repeat(2, 1fr), 100%);
     margin: 0;
   }
 

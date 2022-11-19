@@ -15,7 +15,7 @@ header {
 
 .main__index {
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 .index__img__portada {
   width: 100%;
@@ -143,7 +143,6 @@ aside {
 
 aside .aside__img__paginas {
   width: 100%;
-  padding: none;
   height: 100%; }
 
 .aside__img__contacto {
@@ -162,9 +161,9 @@ aside .aside__img__paginas {
   --state-menu: translate(0); }
 
 .nav {
-  background-color: #a27d52;
   width: 100%;
   height: 45px;
+  background-color: #a27d52;
   margin: 0;
   display: flex; }
 
@@ -208,10 +207,10 @@ aside .aside__img__paginas {
 
 /**** ESTRUCTURA MOVIL ****/
 .img__btn__menu {
-  font-size: 30px;
-  cursor: pointer;
   width: 50px;
   height: 100%;
+  font-size: 30px;
+  cursor: pointer;
   display: none;
   align-items: center; }
 
@@ -259,13 +258,13 @@ aside .aside__img__paginas {
   .nav__menu {
     display: flex; }
   .nav__menu__ul {
+    width: 360px;
+    height: 0px;
     flex-direction: column;
     /*background-color: rgb(151, 144, 144);*/
     position: fixed;
     left: 0;
     top: 124px;
-    width: 360px;
-    height: 0px;
     transition: all 300ms ease;
     z-index: 100;
     align-items: flex-start;
@@ -344,9 +343,9 @@ footer a:hover {
     padding: 0; }
   .lista__clientes__container > ul {
     display: grid;
-    grid-template-areas: "bayer siemens" "cromoion richmond" "fisher fisher";
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "bayer siemens" "cromoion richmond" "fisher fisher"; }
   .bayer {
     grid-area: bayer; }
   .siemens {
@@ -368,9 +367,9 @@ footer a:hover {
 @media screen and (min-width: 993px) {
   .lista__clientes__container > ul {
     display: grid;
-    grid-template-areas: "bayer siemens cromoion" " richmond fisher";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); } }
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
 
 @media screen and (max-width: 580px) {
   .main__container__nosotros {

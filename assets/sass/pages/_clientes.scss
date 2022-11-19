@@ -1,3 +1,5 @@
+@import "./../utilities/mixins.scss";
+
 .lista__clientes__container {
   width: 400px;
   margin: 0 auto;
@@ -14,9 +16,7 @@
   }
 
   .lista__clientes__container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: max-content;
+    @include grid (grid, 100%, max-content);
     padding: 0;
   }
 
@@ -35,9 +35,7 @@
   }
 
   .lista__clientes__container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: max-content;
+    @include grid (grid, 100%, max-content);
     padding: 0;
   }
 
@@ -54,13 +52,12 @@
   }
 
   .lista__clientes__container > ul {
-    display: grid;
+    @include grid (grid, 50% 50%, repeat(3, 1fr));
     grid-template-areas:
       "bayer siemens"
       "cromoion richmond"
       "fisher fisher";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 1fr);
+    
   }
 
   .bayer {
@@ -97,11 +94,9 @@
 
 @media screen and (min-width: 993px) {
   .lista__clientes__container > ul {
-    display: grid;
+    @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
     grid-template-areas:
       "bayer siemens cromoion"
-      " richmond fisher";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+      " richmond fisher";    
   }
 }

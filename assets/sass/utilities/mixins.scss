@@ -1,5 +1,11 @@
-@mixin sizes ($width, $padding, $height){
+@mixin sizes ($width, $height){
     width: $width;
-    padding: $padding;
     height: $height;
 }
+
+@mixin grid ($display, $grid-template-column, $grid-template-rows){
+    display: $display;
+    grid-template-columns: $grid-template-column;
+    grid-template-rows: $grid-template-rows;
+}
+    

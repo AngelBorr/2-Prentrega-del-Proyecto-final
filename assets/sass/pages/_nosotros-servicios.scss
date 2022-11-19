@@ -1,3 +1,5 @@
+@import "./../utilities/mixins.scss";
+
 @media screen and (max-width: 580px) {
   .main__container__nosotros {
     display: grid;
@@ -14,9 +16,7 @@
   }
 
   .main__container__nosotros {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    @include grid(grid, 100%, 40% 60%);
     height: max-content;
   }
 
@@ -32,16 +32,12 @@
 
 @media screen and (min-width: 769px) {
   .main__container__nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100%;
+    @include grid(grid, repeat(2, 1fr), 100%);
     margin: 0;
   }
 
   .main__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100%;
+    @include grid(grid, repeat(2, 1fr), 100%);
     margin: 0;
   }
 
