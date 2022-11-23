@@ -8,4 +8,9 @@
     grid-template-columns: $grid-template-column;
     grid-template-rows: $grid-template-rows;
 }
+
+@mixin margin_padding ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
     

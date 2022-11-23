@@ -6,6 +6,6 @@
 }
 
 .index__img__portada {
-  @include sizes (100%, 100%);
+  @include sizes (100%, 100vw);
   
 }

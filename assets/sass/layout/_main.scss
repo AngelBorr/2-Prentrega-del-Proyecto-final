@@ -8,8 +8,7 @@
 }
 
 main {
-  margin: 15px;
-  padding: 20px;
+  @include margin_padding (15px, 20px);
   background: #ffeccc;
 }
 

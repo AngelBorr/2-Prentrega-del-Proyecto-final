@@ -1,10 +1,11 @@
 @import "./../utilities/mixins.scss";
+@import "./../utilities/variables";
 
 .form__formulario {
   justify-content: center;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: map-get($grid-breakpoints, "sm")) {
   .main__container__contacto {
     @include grid(grid, 100%, 55% 45%);
     margin: 0;
@@ -34,7 +35,7 @@
   }
 }
 
-@media screen and (min-width: 581px) {
+@media screen and (min-width: map-get($grid-breakpoints, "sm")) {
   .container {
     max-width: 100%;
   }
@@ -44,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: map-get($grid-breakpoints, "md")) {
   #header__titulo {
     margin: 32px;
     font-family: cursive;
@@ -70,7 +71,7 @@
   }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: map-get($grid-breakpoints, "lg")) {
   #header__titulo {
     margin: 28px;
     font-family: cursive;
@@ -82,7 +83,7 @@
   }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: map-get($grid-breakpoints, "xl")) {
   .form-label {
     font-size: 1.2em;
   }
@@ -101,6 +102,32 @@
     margin: 26px;
     font-family: cursive;
     font-size: 3.8em;
+  }
+
+  .form-control {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
+  .form-label {
+    font-size: 1.3em;
+  }
+
+  .main__parrafos__paginas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__menu__ul__li a {
+    font-size: 1.9em;
+  }
+
+  #header__titulo {
+    margin: 26px;
+    font-family: cursive;
+    font-size: 3.9em;
   }
 
   .form-control {

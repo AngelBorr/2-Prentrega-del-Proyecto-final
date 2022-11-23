@@ -1,3 +1,15 @@
 $header_background-color: #00abad;
 $header_border-color: solid #0af3cc;
-$nav_bar_padding_top: index_bar;
+$body_background-color: #c76aff;
+$body_subtitulo_background-color: #3e9a4c;
+$footer_background-color: rgb(54, 54, 54);
+$nav_background-color: #a27d52;
+$nav_selected_background-color: rgb(63, 60, 60) ;
+$grid-breakpoints: (
+    xs: 0px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);

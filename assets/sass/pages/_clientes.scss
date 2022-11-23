@@ -1,4 +1,5 @@
 @import "./../utilities/mixins.scss";
+@import "./../utilities/variables";
 
 .lista__clientes__container {
   width: 400px;
@@ -10,7 +11,7 @@
   padding: 10px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: map-get($grid-breakpoints, "sm")) {
   .subtitulo__clientes {
     font-size: 0.75em;
   }
@@ -29,7 +30,7 @@
   }
 }
 
-@media screen and (min-width: 581px) {
+@media screen and (min-width: map-get($grid-breakpoints, "sm")) {
   .subtitulo__clientes {
     font-size: 0.9em;
   }
@@ -44,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: map-get($grid-breakpoints, "md")) {
   .lista__clientes__container {
     width: 100%;
     display: grid;
@@ -92,7 +93,25 @@
   }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: map-get($grid-breakpoints, "lg")) {
+  .lista__clientes__container > ul {
+    @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
+    grid-template-areas:
+      "bayer siemens cromoion"
+      " richmond fisher";    
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "xl")) {
+  .lista__clientes__container > ul {
+    @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
+    grid-template-areas:
+      "bayer siemens cromoion"
+      " richmond fisher";    
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
   .lista__clientes__container > ul {
     @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
     grid-template-areas:

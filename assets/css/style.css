@@ -13,13 +13,17 @@ header {
   font-size: 55px;
   text-align: center; }
 
+@media screen and (min-width: 576px) {
+  #header__titulo {
+    font-size: 2.8em; } }
+
 .main__index {
   width: 100%;
   height: 100%; }
 
 .index__img__portada {
   width: 100%;
-  height: 100%; }
+  height: 100vw; }
 
 body {
   margin: 0;
@@ -67,7 +71,7 @@ main {
 .form__formulario {
   justify-content: center; }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 576px) {
   .main__container__contacto {
     display: grid;
     grid-template-columns: 100%;
@@ -88,13 +92,13 @@ main {
   .footer__contacto {
     height: max-content; } }
 
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 576px) {
   .container {
     max-width: 100%; }
   .form-label {
     font-size: 1.3em; } }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #header__titulo {
     margin: 32px;
     font-family: cursive;
@@ -112,7 +116,7 @@ main {
     margin: 15px;
     height: auto; } }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   #header__titulo {
     margin: 28px;
     font-family: cursive;
@@ -120,7 +124,7 @@ main {
   .nav__menu__ul__li a {
     font-size: 1.7em; } }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .form-label {
     font-size: 1.2em; }
   .main__parrafos__paginas {
@@ -133,6 +137,22 @@ main {
     margin: 26px;
     font-family: cursive;
     font-size: 3.8em; }
+  .form-control {
+    width: 450px; } }
+
+@media screen and (min-width: 1400px) {
+  .form-label {
+    font-size: 1.3em; }
+  .main__parrafos__paginas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nav__menu__ul__li a {
+    font-size: 1.9em; }
+  #header__titulo {
+    margin: 26px;
+    font-family: cursive;
+    font-size: 3.9em; }
   .form-control {
     width: 450px; } }
 
@@ -222,7 +242,7 @@ aside .aside__img__paginas {
 #btn__menu__checkbox {
   display: none; }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 576px) {
   #header__titulo {
     width: 100%;
     text-align: center;
@@ -261,7 +281,6 @@ aside .aside__img__paginas {
     width: 360px;
     height: 0px;
     flex-direction: column;
-    /*background-color: rgb(151, 144, 144);*/
     position: fixed;
     left: 0;
     top: 124px;
@@ -304,6 +323,25 @@ footer a {
 footer a:hover {
   color: blue; }
 
+footer .social__network {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  footer .social__network .icon, footer .social__network .icon-instagram, footer .social__network .icon-facebook, footer .social__network .icon-twitter {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px; }
+
+footer .icon-facebook {
+  background-color: #3e5795; }
+
+footer .icon-instagram {
+  background-color: #d83ff3; }
+
+footer .icon-twitter {
+  background-color: #55acee; }
+
 .lista__clientes__container {
   width: 400px;
   margin: 0 auto; }
@@ -312,7 +350,7 @@ footer a:hover {
   list-style: none;
   padding: 10px; }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 576px) {
   .subtitulo__clientes {
     font-size: 0.75em; }
   .lista__clientes__container {
@@ -325,7 +363,7 @@ footer a:hover {
   .lista__clientes__container li {
     padding: 10px; } }
 
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 576px) {
   .subtitulo__clientes {
     font-size: 0.9em; }
   .lista__clientes__container {
@@ -336,7 +374,7 @@ footer a:hover {
   .lista__clientes__container > ul {
     padding: 0; } }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .lista__clientes__container {
     width: 100%;
     display: grid;
@@ -364,20 +402,32 @@ footer a:hover {
     width: 80%;
     display: inline-block; } }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   .lista__clientes__container > ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
 
-@media screen and (max-width: 580px) {
+@media screen and (min-width: 1200px) {
+  .lista__clientes__container > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
+
+@media screen and (min-width: 1400px) {
+  .lista__clientes__container > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
+
+@media screen and (max-width: 576px) {
   .main__container__nosotros {
     display: grid; } }
 
-@media screen and (min-width: 581px) {
-  #header__titulo {
-    font-size: 3em; }
+@media screen and (min-width: 576px) {
   .nav__menu__ul__li a {
     font-size: 1.2em; }
   .main__container__nosotros {
@@ -391,7 +441,7 @@ footer a:hover {
     margin: 15px;
     height: max-content; } }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .main__container__nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -408,12 +458,12 @@ footer a:hover {
     font-size: 0.8em;
     text-align: justify; } }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   .main__parrafo__servicios p {
     font-size: 0.9em;
     text-align: justify; } }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .main__parrafo__servicios p {
     font-size: 1em;
     text-align: justify; }
@@ -426,4 +476,19 @@ footer a:hover {
     font-size: 1.3em; }
   .main__parrafo__servicios p {
     font-size: 1em;
+    text-align: justify; } }
+
+@media screen and (min-width: 1400px) {
+  .main__parrafo__servicios p {
+    font-size: 1.1em;
+    text-align: justify; }
+  .main__parrafos__paginas {
+    display: flex; }
+  .main__parrafo__nosotros {
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em; }
+  .main__parrafo__servicios p {
+    font-size: 1.1em;
     text-align: justify; } }
