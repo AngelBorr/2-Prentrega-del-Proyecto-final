@@ -1,5 +1,6 @@
 @import "./../utilities/variables";
 @import "./../utilities/social-network";
+@import "./../utilities/mixins.scss";
 
 footer {
   background: $footer_background-color;
@@ -30,7 +31,6 @@ footer .social__network {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  
 
   & .icon {
     display: block;
@@ -46,7 +46,7 @@ footer .social__network {
     @extend .icon;
   }
 
-  & .icon-twitter{
+  & .icon-twitter {
     @extend .icon;
   }
 }
@@ -56,5 +56,227 @@ footer {
     .icon-#{$social-network} {
       background-color: $color;
     }
+  }
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  .footer__container {
+    @include grid(grid, repeat(3, 3fr), 60% 40%);
+
+    & section {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 5px;
+      & a {
+        padding-left: 15px;
+      }
+    }
+    & p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .social__network {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  & .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "sm")) {
+  .footer__container {
+    @include grid(grid, repeat(3, 3fr), 60% 40%);
+
+    & section {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 5px;
+      & a {
+        padding-left: 15px;
+      }
+    }
+    & p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .social__network {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  & .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "md")) {
+  .footer__container {
+    @include grid(grid, repeat(3, 3fr), 60% 40%);
+
+    & section {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 5px;
+      & a {
+        padding-left: 15px;
+      }
+    }
+    & p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .social__network {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  & .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "lg")) {
+  .footer__container {
+    @include grid(grid, repeat(3, 3fr), 60% 40%);
+
+    & section {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 5px;
+      & a {
+        padding-left: 15px;
+      }
+    }
+    & p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .social__network {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  & .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "xl")) {
+  .footer__container {
+    @include grid(grid, repeat(3, 3fr), 70% 30%);
+
+    & section {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 5px;
+      & a {
+        padding-left: 15px;
+      }
+    }
+    & p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .social__network {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  & .icon {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
+  .footer__container {
+    @include grid(grid, repeat(3, 3fr), 70% 30%);
+
+    & section {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 5px;
+      & a {
+        padding-left: 15px;
+      }
+    }
+    & p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .social__network {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  & .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
   }
 }
