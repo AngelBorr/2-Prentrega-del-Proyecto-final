@@ -331,7 +331,8 @@ footer .social__network {
     display: block;
     width: 50px;
     height: 50px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    cursor: pointer; }
 
 footer .icon-facebook {
   background-color: #3e5795; }
@@ -541,7 +542,10 @@ footer .icon-twitter {
   .lista__clientes__container > ul {
     padding: 0; }
   .lista__clientes__container li {
-    padding: 10px; } }
+    padding: 10px; }
+    .lista__clientes__container li img {
+      width: 400px;
+      height: 400px; } }
 
 @media screen and (min-width: 576px) {
   .subtitulo__clientes {
@@ -552,7 +556,10 @@ footer .icon-twitter {
     grid-template-rows: max-content;
     padding: 0; }
   .lista__clientes__container > ul {
-    padding: 0; } }
+    padding: 0; }
+    .lista__clientes__container > ul li img {
+      width: 400px;
+      height: 400px; } }
 
 @media screen and (min-width: 768px) {
   .lista__clientes__container {
@@ -579,7 +586,8 @@ footer .icon-twitter {
     padding: 15px;
     justify-content: space-around; }
   .lista__clientes__container > ul > li > img {
-    width: 80%;
+    width: 350px;
+    height: 350px;
     display: inline-block; } }
 
 @media screen and (min-width: 992px) {
@@ -587,21 +595,30 @@ footer .icon-twitter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
+    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; }
+    .lista__clientes__container > ul li img {
+      width: 285px;
+      height: 285px; } }
 
 @media screen and (min-width: 1200px) {
   .lista__clientes__container > ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
+    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; }
+    .lista__clientes__container > ul li img {
+      width: 350px;
+      height: 350px; } }
 
 @media screen and (min-width: 1400px) {
   .lista__clientes__container > ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; } }
+    grid-template-areas: "bayer siemens cromoion" " richmond fisher"; }
+    .lista__clientes__container > ul li img {
+      width: 400px;
+      height: 400px; } }
 
 @media screen and (max-width: 576px) {
   .main__container__nosotros {

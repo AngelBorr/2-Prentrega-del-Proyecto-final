@@ -17,7 +17,7 @@
   }
 
   .lista__clientes__container {
-    @include grid (grid, 100%, max-content);
+    @include grid(grid, 100%, max-content);
     padding: 0;
   }
 
@@ -27,7 +27,12 @@
 
   .lista__clientes__container li {
     padding: 10px;
+    & img {
+    @include sizes(400px, 400px);
   }
+  }
+
+  
 }
 
 @media screen and (min-width: map-get($grid-breakpoints, "sm")) {
@@ -36,12 +41,17 @@
   }
 
   .lista__clientes__container {
-    @include grid (grid, 100%, max-content);
+    @include grid(grid, 100%, max-content);
     padding: 0;
   }
 
   .lista__clientes__container > ul {
     padding: 0;
+    & li{
+      & img{
+        @include sizes(400px, 400px);        
+      }
+    }
   }
 }
 
@@ -53,12 +63,11 @@
   }
 
   .lista__clientes__container > ul {
-    @include grid (grid, 50% 50%, repeat(3, 1fr));
+    @include grid(grid, 50% 50%, repeat(3, 1fr));
     grid-template-areas:
       "bayer siemens"
       "cromoion richmond"
       "fisher fisher";
-    
   }
 
   .bayer {
@@ -88,34 +97,49 @@
   }
 
   .lista__clientes__container > ul > li > img {
-    width: 80%;
+    @include sizes (350px, 350px);
     display: inline-block;
   }
 }
 
 @media screen and (min-width: map-get($grid-breakpoints, "lg")) {
   .lista__clientes__container > ul {
-    @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
+    @include grid(grid, repeat(3, 1fr), repeat(2, 1fr));
     grid-template-areas:
       "bayer siemens cromoion"
-      " richmond fisher";    
+      " richmond fisher";
+      & li{
+        & img{
+          @include sizes(285px, 285px);        
+        }
+      }
   }
 }
 
 @media screen and (min-width: map-get($grid-breakpoints, "xl")) {
   .lista__clientes__container > ul {
-    @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
+    @include grid(grid, repeat(3, 1fr), repeat(2, 1fr));
     grid-template-areas:
       "bayer siemens cromoion"
-      " richmond fisher";    
+      " richmond fisher";
+      & li{
+        & img{
+          @include sizes(350px, 350px);        
+        }
+      }
   }
 }
 
 @media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
   .lista__clientes__container > ul {
-    @include grid (grid, repeat(3, 1fr), repeat(2, 1fr));
+    @include grid(grid, repeat(3, 1fr), repeat(2, 1fr));
     grid-template-areas:
       "bayer siemens cromoion"
-      " richmond fisher";    
+      " richmond fisher";
+      & li{
+        & img{
+          @include sizes(400px, 400px);        
+        }
+      }
   }
 }
