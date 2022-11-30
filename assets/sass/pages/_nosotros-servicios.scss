@@ -1,6 +1,10 @@
 @import "./../utilities/mixins.scss";
 @import "./../utilities/variables";
 
+.main__parrafo__servicios h3{
+  font-weight: bold;
+}
+
 @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
   .main__container__nosotros {
     display: grid;
@@ -23,7 +27,7 @@
 
   .main__parrafos__paginas {
     margin: 15px;
-    height: max-content;
+    height: auto;
   }
 }
 
@@ -63,6 +67,7 @@
 
   .main__parrafos__paginas {
     display: flex;
+    height: auto;
   }
 
   .main__parrafo__nosotros {
@@ -86,6 +91,7 @@
 
   .main__parrafos__paginas {
     display: flex;
+    height: auto;
   }
 
   .main__parrafo__nosotros {

@@ -1,14 +1,27 @@
 @import "./../utilities/mixins.scss";
 @import "./../utilities/variables";
 
+.main__parrafos__paginas{
+  height: auto;
+}
+
 .form__formulario {
   justify-content: center;
 }
 
+#comentarios{
+  height: auto;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
   .main__container__contacto {
-    @include grid(grid, 100%, 55% 45%);
+    @include grid(grid, 100%, none);
     margin: 0;
+  }
+
+  .main__parrafos__paginas{
+    height: max-content;
   }
 
   .form__formulario {
@@ -42,6 +55,10 @@
 
   .form-label {
     font-size: 1.3em;
+  }
+
+  .main__parrafos__paginas{
+    height: auto;
   }
 }
 
@@ -81,6 +98,10 @@
   .nav__menu__ul__li a {
     font-size: 1.7em;
   }
+
+  .main__parrafos__paginas{
+    height: auto;
+  }
 }
 
 @media screen and (min-width: map-get($grid-breakpoints, "xl")) {
@@ -90,6 +111,7 @@
 
   .main__parrafos__paginas {
     display: flex;
+    height: auto;
     justify-content: space-around;
     align-items: center;
   }
@@ -116,6 +138,7 @@
 
   .main__parrafos__paginas {
     display: flex;
+    height: auto;
     justify-content: space-around;
     align-items: center;
   }
@@ -132,5 +155,9 @@
 
   .form-control {
     width: 450px;
+  }
+
+  #comentarios{
+    height: auto;
   }
 }

@@ -28,7 +28,7 @@
   .lista__clientes__container li {
     padding: 10px;
     & img {
-    @include sizes(400px, 400px);
+    @include sizes(350px, 350px);
   }
   }
 

@@ -42,7 +42,8 @@ body {
   margin: 0; }
 
 body main .main__parrafos__paginas {
-  font-size: 25px; }
+  font-size: 25px;
+  height: auto; }
 
 .main__container {
   display: grid; }
@@ -68,15 +69,24 @@ main {
 .main__parrafo__servicios {
   font-size: 18px; }
 
+.main__parrafos__paginas {
+  height: auto; }
+
 .form__formulario {
   justify-content: center; }
+
+#comentarios {
+  height: auto;
+  margin-bottom: 10px; }
 
 @media screen and (max-width: 576px) {
   .main__container__contacto {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: none;
     margin: 0; }
+  .main__parrafos__paginas {
+    height: max-content; }
   .form__formulario {
     display: flex;
     width: 100%;
@@ -96,7 +106,9 @@ main {
   .container {
     max-width: 100%; }
   .form-label {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+  .main__parrafos__paginas {
+    height: auto; } }
 
 @media screen and (min-width: 768px) {
   #header__titulo {
@@ -122,13 +134,16 @@ main {
     font-family: cursive;
     font-size: 3.6em; }
   .nav__menu__ul__li a {
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+  .main__parrafos__paginas {
+    height: auto; } }
 
 @media screen and (min-width: 1200px) {
   .form-label {
     font-size: 1.2em; }
   .main__parrafos__paginas {
     display: flex;
+    height: auto;
     justify-content: space-around;
     align-items: center; }
   .nav__menu__ul__li a {
@@ -145,6 +160,7 @@ main {
     font-size: 1.3em; }
   .main__parrafos__paginas {
     display: flex;
+    height: auto;
     justify-content: space-around;
     align-items: center; }
   .nav__menu__ul__li a {
@@ -154,7 +170,9 @@ main {
     font-family: cursive;
     font-size: 3.9em; }
   .form-control {
-    width: 450px; } }
+    width: 450px; }
+  #comentarios {
+    height: auto; } }
 
 aside {
   margin: 15px;
@@ -223,7 +241,8 @@ aside .aside__img__paginas {
 .nav__menu a:hover {
   color: #3f3c3c;
   background: rgba(63, 60, 60, 0.3);
-  height: 45px; }
+  height: 45px;
+  color: #c3fcf1; }
 
 /**** ESTRUCTURA MOVIL ****/
 .img__btn__menu {
@@ -310,7 +329,8 @@ footer {
   color: white; }
 
 footer section {
-  float: right; }
+  float: right;
+  padding: 5px; }
 
 footer p {
   margin: 0; }
@@ -321,7 +341,7 @@ footer a {
   text-decoration: none; }
 
 footer a:hover {
-  color: blue; }
+  color: #1063c3; }
 
 footer .social__network {
   display: flex;
@@ -333,6 +353,12 @@ footer .social__network {
     height: 50px;
     margin-left: 10px;
     cursor: pointer; }
+  footer .social__network .icon-instagram {
+    border-radius: 15px; }
+  footer .social__network .icon-facebook {
+    border-radius: 10px; }
+  footer .social__network .icon-twitter {
+    border-radius: 15px; }
 
 footer .icon-facebook {
   background-color: #3e5795; }
@@ -347,7 +373,7 @@ footer .icon-twitter {
   .footer__container {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: 60% 40%; }
+    grid-template-rows: 60% 60%; }
     .footer__container section {
       grid-column: 2/4;
       grid-row: 2/3;
@@ -355,16 +381,18 @@ footer .icon-twitter {
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-      padding-left: 5px; }
+      padding: 5px; }
       .footer__container section a {
-        padding-left: 15px; }
+        padding-left: 15px;
+        font-size: 0.9rem; }
     .footer__container p {
       grid-column: 1/2;
       grid-row: 2/3;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      font-size: 0.9rem; }
   .social__network {
     grid-column: 1/4;
     grid-row: 1/2; }
@@ -544,8 +572,8 @@ footer .icon-twitter {
   .lista__clientes__container li {
     padding: 10px; }
     .lista__clientes__container li img {
-      width: 400px;
-      height: 400px; } }
+      width: 350px;
+      height: 350px; } }
 
 @media screen and (min-width: 576px) {
   .subtitulo__clientes {
@@ -620,6 +648,9 @@ footer .icon-twitter {
       width: 400px;
       height: 400px; } }
 
+.main__parrafo__servicios h3 {
+  font-weight: bold; }
+
 @media screen and (max-width: 576px) {
   .main__container__nosotros {
     display: grid; } }
@@ -636,7 +667,7 @@ footer .icon-twitter {
     font-size: 1.2em; }
   .main__parrafos__paginas {
     margin: 15px;
-    height: max-content; } }
+    height: auto; } }
 
 @media screen and (min-width: 768px) {
   .main__container__nosotros {
@@ -665,7 +696,8 @@ footer .icon-twitter {
     font-size: 1em;
     text-align: justify; }
   .main__parrafos__paginas {
-    display: flex; }
+    display: flex;
+    height: auto; }
   .main__parrafo__nosotros {
     padding: 15px;
     justify-content: center;
@@ -680,7 +712,8 @@ footer .icon-twitter {
     font-size: 1.1em;
     text-align: justify; }
   .main__parrafos__paginas {
-    display: flex; }
+    display: flex;
+    height: auto; }
   .main__parrafo__nosotros {
     padding: 15px;
     justify-content: center;
